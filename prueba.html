@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="libraries/ToogleButton/dist/js/bootstrap-checkbox.min.js" defer></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+ 
+<body>
+<input type="checkbox">
+    <script>
+    $(function() {
+
+        $('input[type="checkbox"]').checkboxpicker({
+
+        // OPTIONS
+
+        });
+
+    });
+    </script>
+    <style>
+        style: false,
+
+defaultClass: 'btn-default',
+
+disabledCursor: 'not-allowed',
+
+offClass: 'btn-danger',
+
+onClass: 'btn-success',
+
+offLabel: 'No',
+
+onLabel: 'Yes',
+
+offTitle: false,
+
+onTitle: false,
+
+
+// Event key codes:
+
+// 13: Return
+
+// 32: Spacebar
+
+toggleKeyCodes: [13, 32],
+
+ 
+
+warningMessage: 'Please do not use Bootstrap-checkbox element in label element.'
+    </style>
+</body>
+</html>
