@@ -6,7 +6,7 @@
 	<div class="modal fade" id="myModalFactura" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog" role="document">
 		<div class="modal-content">
-			<form class="form-horizontal" method="post" id="editar_factura_despacho" name="editar_factura_despacho">
+			<form class="form-horizontal" method="post" id="editar_factura_despacho" name="editar_factura_despacho" enctype="multipart/form-data">
 		  <div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			<h4 class="modal-title myModalLabel"><i class='glyphicon glyphicon-edit'></i></h4>

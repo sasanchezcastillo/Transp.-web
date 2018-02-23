@@ -92,8 +92,8 @@ function updateDespacho(){//Funcion encargada de enviar el archivo via AJAX
         }
         if($("#adjunto").val() !=''){
             var inputFileImage = document.getElementById("adjunto");
-            //var file = inputFileImage.files[0];
-            data.append('adjunto',inputFileImage);
+            var file = inputFileImage.files[0];
+            data.append('adjunto',file);
         }else{
             alert('No has seleccionado un archivo en la fila ');//
             return;// 

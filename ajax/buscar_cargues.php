@@ -127,7 +127,7 @@ order by estados_cargues.fecha_hora_cargue desc";
                         </td>
                         <td  class="text-center"> <?php 
                             if($tipo_documento ==='Despacho'){
-                                ?><span onclick="pushDatos('<?php echo $id_factura_despacho;?>');"data-toggle="modal" data-target="#myModalFactura"class="label label-danger" title="Actualize a Factura"><?php
+                                ?><span style="cursor: pointer;"onclick="pushDatos('<?php echo $id_factura_despacho;?>');"data-toggle="modal" data-target="#myModalFactura"class="label label-danger" title="Actualize a Factura"><?php
                                     echo $tipo_documento; ?></span>
                             <?php
                             }else{
@@ -140,7 +140,7 @@ order by estados_cargues.fecha_hora_cargue desc";
                     
                             
                         <td class="text-center"><?php echo $fecha_hora_cargue; ?></td>
-                        <td class="text-center"><a href="#" class='btn btn-default' title='Descargar PDF' onclick="imprimir_factura('<?php echo $id_factura_cargue;?>');"><i class="glyphicon glyphicon-download"></i></a> </td>
+                        <td class="text-center"><a href="#" class='btn btn-default' title='Descargar PDF' onclick="imprimir_factura();"><i class="glyphicon glyphicon-download"></i></a> </td>
 					</tr>
 					<?php
 				}
